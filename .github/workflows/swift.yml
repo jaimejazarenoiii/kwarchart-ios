@@ -2,18 +2,36 @@ name: Swift
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main 
+      - develop
+      - feature/*
   pull_request:
-    branches: [ main ]
+    branches: 
+      - main
+      - develop
 
 jobs:
   build:
-
+  
+  # Initialize Build Environment
+    name: Initialize
+    env: 
+      DEVICE: "iPhone 11"
+      DERIVED_DATA_PATH: "DerivedData"
+  
     runs-on: macos-latest
 
     steps:
+    
+    # Checkout build branch
+    - name: Checkout
     - uses: actions/checkout@v2
+    
+    # Build project
     - name: Build
       run: swift build -v
+    
+    # Run tests
     - name: Run tests
       run: swift test -v
