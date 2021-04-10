@@ -30,7 +30,9 @@ jobs:
     
     # Build project
     - name: Build
-      run: swift build -v
+      run: |
+        cd Kwarchart
+        swift build -v
     
     # Run tests
     - name: Run tests
