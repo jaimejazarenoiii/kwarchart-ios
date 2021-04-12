@@ -32,8 +32,7 @@ jobs:
     - name: Build
       run: |
         cd Kwarchart
-        swift build -v
+        set -o pipefail && xcodebuild clean -scheme $Kwarchart -destination $DESTINATION -derivedDataPath $DERIVED_DATA_PATH build-for-testing
     
     # Run tests
-    - name: Run tests
-      run: swift test -v
+
