@@ -17,7 +17,7 @@ jobs:
   # Initialize Build Environment
     name: Initialize
     env: 
-      DEVICE: "iPhone 11"
+      DEVICE: "iPhone 12"
       DERIVED_DATA_PATH: "DerivedData"
   
     runs-on: macos-latest
@@ -32,7 +32,7 @@ jobs:
     - name: Build
       run: |
         cd Kwarchart
-        set -o pipefail && xcodebuild clean -scheme $SCHEME -destination "platform=iOS Simulator,name=$DEVICE" -derivedDataPath $DERIVED_DATA_PATH build-for-testing
+        set -o pipefail && xcodebuild clean -scheme Kwarchart CODE_SIGNING_ALLOWED=NO
     
     # Run tests
 
