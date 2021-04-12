@@ -32,7 +32,7 @@ jobs:
     - name: Build
       run: |
         cd Kwarchart
-        set -o pipefail && xcodebuild clean -scheme $Kwarchart -Kwarchart -derivedDataPath $DERIVED_DATA_PATH build-for-testing
+        set -o pipefail && xcodebuild clean -scheme $Kwarchart -destination $Kwarchart -derivedDataPath $DERIVED_DATA_PATH build-for-testing
     
     # Run tests
 
