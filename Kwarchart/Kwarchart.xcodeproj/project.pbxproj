@@ -10,6 +10,9 @@
 		A75694182610D806000CCB1D /* Kwarchart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A756940E2610D806000CCB1D /* Kwarchart.framework */; };
 		A756941D2610D806000CCB1D /* KwarchartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A756941C2610D806000CCB1D /* KwarchartTests.swift */; };
 		A756941F2610D806000CCB1D /* Kwarchart.h in Headers */ = {isa = PBXBuildFile; fileRef = A75694112610D806000CCB1D /* Kwarchart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7A693E7263FE97300CCEB22 /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A693E6263FE97300CCEB22 /* PieChartCell.swift */; };
+		A7A693ED263FEA2700CCEB22 /* ChartCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A693EC263FEA2700CCEB22 /* ChartCellModel.swift */; };
+		A7A693F1263FEA7000CCEB22 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A693F0263FEA7000CCEB22 /* PieChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		A75694172610D806000CCB1D /* KwarchartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KwarchartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A756941C2610D806000CCB1D /* KwarchartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KwarchartTests.swift; sourceTree = "<group>"; };
 		A756941E2610D806000CCB1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A693E6263FE97300CCEB22 /* PieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
+		A7A693EC263FEA2700CCEB22 /* ChartCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCellModel.swift; sourceTree = "<group>"; };
+		A7A693F0263FEA7000CCEB22 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		A75694102610D806000CCB1D /* Kwarchart */ = {
 			isa = PBXGroup;
 			children = (
+				A7A693E5263FE93100CCEB22 /* PieChart+DonutChart */,
 				A75694112610D806000CCB1D /* Kwarchart.h */,
 				A75694122610D806000CCB1D /* Info.plist */,
 			);
@@ -84,6 +91,16 @@
 				A756941E2610D806000CCB1D /* Info.plist */,
 			);
 			path = KwarchartTests;
+			sourceTree = "<group>";
+		};
+		A7A693E5263FE93100CCEB22 /* PieChart+DonutChart */ = {
+			isa = PBXGroup;
+			children = (
+				A7A693E6263FE97300CCEB22 /* PieChartCell.swift */,
+				A7A693EC263FEA2700CCEB22 /* ChartCellModel.swift */,
+				A7A693F0263FEA7000CCEB22 /* PieChartView.swift */,
+			);
+			path = "PieChart+DonutChart";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +164,7 @@
 				TargetAttributes = {
 					A756940D2610D806000CCB1D = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					A75694162610D806000CCB1D = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A693F1263FEA7000CCEB22 /* PieChartView.swift in Sources */,
+				A7A693ED263FEA2700CCEB22 /* ChartCellModel.swift in Sources */,
+				A7A693E7263FE97300CCEB22 /* PieChartCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +362,7 @@
 		A75694232610D806000CCB1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4K63CNDGLU;
@@ -357,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ajcordova.Kwarchart;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +388,7 @@
 		A75694242610D806000CCB1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4K63CNDGLU;
@@ -389,6 +413,7 @@
 		A75694262610D806000CCB1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K63CNDGLU;
 				INFOPLIST_FILE = KwarchartTests/Info.plist;
@@ -407,6 +432,7 @@
 		A75694272610D806000CCB1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K63CNDGLU;
 				INFOPLIST_FILE = KwarchartTests/Info.plist;
