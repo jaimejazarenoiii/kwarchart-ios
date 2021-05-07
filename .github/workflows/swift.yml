@@ -31,7 +31,7 @@ jobs:
     # Build project
     - name: Build
       run: |
-        set -o pipefail && xcodebuild clean build -scheme Kwarchart CODE_SIGNING_ALLOWED=NO
+        set -o pipefail && xcodebuild clean build -scheme kwarchart CODE_SIGNING_ALLOWED=NO
     
     # Run tests
 
