@@ -5,19 +5,23 @@
 //  Created by Amiel Jireh Cordova on 5/10/21.
 //
 
+import SwiftUI
+
 struct KwarChart {
     
-    func createPieChartView (pieChartType: PieChartType, legendPosition: LegendPosition) {
-        switch pieChartType {
+    static func drawPieChart(pieChartType: PieChartType, pieSeries: [PieSeries<Any>], legendPosition: LegendPosition) -> PieChartPresentationView? {
+        var pieChart: PieChartView? = nil
+        
+        switch (pieChartType) {
         case .NORMAL:
-            // create
+            pieChart = PieChartView(dataModel: PieChartDataModel.init(dataModel: pieSeries))
             break;
         case .DOUGHNUT:
-            // create doughnut piechart
             break;
         }
+        
+        guard let chartView: PieChartView = pieChart else { return nil }
+        let pieChartRepresentation = PieChartPresentationView(chartView: chartView, chartData: pieSeries, legendPosition: legendPosition)
+        return pieChartRepresentation
     }
-    
-    func createBarGraph() {}
-    func createLineGraph() {}
 }
