@@ -21,7 +21,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		A748F34D2648FEC200909626 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A748F34C2648FEC200909626 /* Constants.swift */; };
+		A759DEA8265E35F900FD177E /* PieChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759DEA7265E35F900FD177E /* PieChartType.swift */; };
+		A759DEAE265E361C00FD177E /* LegendPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759DEAD265E361C00FD177E /* LegendPosition.swift */; };
+		A7EEC679265F642D005F6A1A /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC678265F642D005F6A1A /* ChartData.swift */; };
+		A7EEC67F265F68CF005F6A1A /* PieSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC67E265F68CF005F6A1A /* PieSeries.swift */; };
+		A7EEC687265F6CAA005F6A1A /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */; };
+		A7EEC68D265F6D51005F6A1A /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC68C265F6D51005F6A1A /* PieChartView.swift */; };
+		A7EEC693265F6D88005F6A1A /* PieChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */; };
+		A7EEC6B1265F6E27005F6A1A /* PieChartPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6B0265F6E27005F6A1A /* PieChartPresentationView.swift */; };
+		A7EEC6C7265F7080005F6A1A /* ChartSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6C6265F7080005F6A1A /* ChartSample.swift */; };
 		OBJ_24 /* KwarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* KwarChart.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCTestManifests.swift */; };
@@ -47,14 +55,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A748F34C2648FEC200909626 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A759DEA7265E35F900FD177E /* PieChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartType.swift; sourceTree = "<group>"; };
+		A759DEAD265E361C00FD177E /* LegendPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendPosition.swift; sourceTree = "<group>"; };
+		A7EEC678265F642D005F6A1A /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		A7EEC67E265F68CF005F6A1A /* PieSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSeries.swift; sourceTree = "<group>"; };
+		A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
+		A7EEC68C265F6D51005F6A1A /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartDataModel.swift; sourceTree = "<group>"; };
+		A7EEC6B0265F6E27005F6A1A /* PieChartPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartPresentationView.swift; sourceTree = "<group>"; };
+		A7EEC6C6265F7080005F6A1A /* ChartSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSample.swift; sourceTree = "<group>"; };
 		OBJ_12 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* kwarchartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwarchartTests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* Kwarchart-Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Kwarchart-Example"; sourceTree = SOURCE_ROOT; };
 		OBJ_18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* KwarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KwarChart.swift; sourceTree = "<group>"; };
-		"kwarchart::kwarchart::Product" /* kwarchart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = kwarchart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"kwarchart::kwarchart::Product" /* kwarchart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = kwarchart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"kwarchart::kwarchartTests::Product" /* kwarchartTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = kwarchartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,12 +93,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A748F355264905FE00909626 /* Constants */ = {
+		A748F355264905FE00909626 /* enum */ = {
 			isa = PBXGroup;
 			children = (
-				A748F34C2648FEC200909626 /* Constants.swift */,
+				A759DEA7265E35F900FD177E /* PieChartType.swift */,
+				A759DEAD265E361C00FD177E /* LegendPosition.swift */,
 			);
-			path = Constants;
+			path = enum;
+			sourceTree = "<group>";
+		};
+		A7EEC677265F63C4005F6A1A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEC678265F642D005F6A1A /* ChartData.swift */,
+				A7EEC67E265F68CF005F6A1A /* PieSeries.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		A7EEC684265F6921005F6A1A /* charts */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEC685265F692A005F6A1A /* PieChart */,
+			);
+			path = charts;
+			sourceTree = "<group>";
+		};
+		A7EEC685265F692A005F6A1A /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */,
+				A7EEC68C265F6D51005F6A1A /* PieChartView.swift */,
+				A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */,
+				A7EEC6B0265F6E27005F6A1A /* PieChartPresentationView.swift */,
+			);
+			path = PieChart;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
@@ -112,7 +157,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -122,7 +167,6 @@
 				OBJ_17 /* Kwarchart-Example */,
 				OBJ_18 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -136,8 +180,11 @@
 		OBJ_8 /* kwarchart */ = {
 			isa = PBXGroup;
 			children = (
-				A748F355264905FE00909626 /* Constants */,
+				A7EEC684265F6921005F6A1A /* charts */,
+				A7EEC677265F63C4005F6A1A /* models */,
+				A748F355264905FE00909626 /* enum */,
 				OBJ_9 /* KwarChart.swift */,
+				A7EEC6C6265F7080005F6A1A /* ChartSample.swift */,
 			);
 			name = kwarchart;
 			path = Sources/kwarchart;
@@ -209,7 +256,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,8 +274,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				A7EEC68D265F6D51005F6A1A /* PieChartView.swift in Sources */,
 				OBJ_24 /* KwarChart.swift in Sources */,
-				A748F34D2648FEC200909626 /* Constants.swift in Sources */,
+				A759DEA8265E35F900FD177E /* PieChartType.swift in Sources */,
+				A7EEC679265F642D005F6A1A /* ChartData.swift in Sources */,
+				A7EEC6C7265F7080005F6A1A /* ChartSample.swift in Sources */,
+				A759DEAE265E361C00FD177E /* LegendPosition.swift in Sources */,
+				A7EEC693265F6D88005F6A1A /* PieChartDataModel.swift in Sources */,
+				A7EEC67F265F68CF005F6A1A /* PieSeries.swift in Sources */,
+				A7EEC687265F6CAA005F6A1A /* PieChartCell.swift in Sources */,
+				A7EEC6B1265F6E27005F6A1A /* PieChartPresentationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +330,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = kwarchart.xcodeproj/kwarchart_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
@@ -303,7 +358,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = kwarchart.xcodeproj/kwarchart_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
@@ -354,12 +409,13 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
@@ -416,11 +472,12 @@
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				USE_HEADERMAP = NO;
