@@ -71,7 +71,7 @@
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* KwarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KwarChart.swift; sourceTree = "<group>"; };
 		"kwarchart::kwarchart::Product" /* kwarchart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = kwarchart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"kwarchart::kwarchartTests::Product" /* kwarchartTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = kwarchartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"kwarchart::kwarchartTests::Product" /* kwarchartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = kwarchartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +451,8 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = kwarchartTests;
@@ -501,6 +503,8 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = kwarchartTests;
