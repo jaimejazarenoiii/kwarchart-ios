@@ -13,6 +13,9 @@
 		A77A929C262EA919004B289F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A929B262EA919004B289F /* Preview Assets.xcassets */; };
 		A77A92A7262EA91A004B289F /* Kwarchart_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A92A6262EA91A004B289F /* Kwarchart_ExampleTests.swift */; };
 		A77A92B2262EA91A004B289F /* Kwarchart_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A92B1262EA91A004B289F /* Kwarchart_ExampleUITests.swift */; };
+		A7E655E42664AE6E00F0C095 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E655E32664AE6E00F0C095 /* PieChartView.swift */; };
+		A7E655E92664AF4B00F0C095 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E655E82664AF4B00F0C095 /* LineChartView.swift */; };
+		A7E655EE2664B26A00F0C095 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E655ED2664B26A00F0C095 /* BarChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		A77A92AD262EA91A004B289F /* Kwarchart-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kwarchart-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77A92B1262EA91A004B289F /* Kwarchart_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kwarchart_ExampleUITests.swift; sourceTree = "<group>"; };
 		A77A92B3262EA91A004B289F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7E655E32664AE6E00F0C095 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		A7E655E82664AF4B00F0C095 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		A7E655ED2664B26A00F0C095 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				A77A9298262EA919004B289F /* Assets.xcassets */,
 				A77A929D262EA919004B289F /* Info.plist */,
 				A77A929A262EA919004B289F /* Preview Content */,
+				A7E655E32664AE6E00F0C095 /* PieChartView.swift */,
+				A7E655E82664AF4B00F0C095 /* LineChartView.swift */,
+				A7E655ED2664B26A00F0C095 /* BarChartView.swift */,
 			);
 			path = "Kwarchart-Example";
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E655E42664AE6E00F0C095 /* PieChartView.swift in Sources */,
 				A77A9297262EA917004B289F /* ContentView.swift in Sources */,
+				A7E655EE2664B26A00F0C095 /* BarChartView.swift in Sources */,
 				A77A9295262EA917004B289F /* Kwarchart_ExampleApp.swift in Sources */,
+				A7E655E92664AF4B00F0C095 /* LineChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
