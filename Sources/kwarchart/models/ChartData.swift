@@ -8,7 +8,12 @@
 import Foundation
 import SwiftUI
 
-struct ChartData<T: Any> {
-    let key: T
+public struct ChartData {
+    let key: Any
     let value: CGFloat
+    
+    public init(key: Any, value: CGFloat) {
+        self.key = key
+        self.value = value
+    }
 }
