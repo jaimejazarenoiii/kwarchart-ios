@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 13.0, *)
 struct ChartSample {
     static let pieSeriesSample = [ PieSeries(data: ChartData(key: "String", value: 100.0), color: .blue, legend: "String"),
                                  PieSeries(data: ChartData(key: Double(Date.timeIntervalSinceReferenceDate), value: 100.0), color: .green, legend: "Date???"),

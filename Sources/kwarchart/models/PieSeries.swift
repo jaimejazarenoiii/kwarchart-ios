@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 13.0, *)
 struct PieSeries<T: Any>: Identifiable {
     let id = UUID()
     let data: ChartData<T>

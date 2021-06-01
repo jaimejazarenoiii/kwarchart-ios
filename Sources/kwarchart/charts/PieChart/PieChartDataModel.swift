@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 13.0, *)
 final class PieChartDataModel: ObservableObject {
     var chartCellModels: [PieSeries<Any>] = []
     var startingAngle = Angle(degrees: 0)

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 struct PieChartView: View {
     @State private var selectedCell: UUID = UUID()
     
@@ -22,6 +23,7 @@ struct PieChartView: View {
     }
 }
 
+@available(iOS 13.0, *)
 struct PieChartView_Previews: PreviewProvider {
     static var previews: some View {
         PieChartView(dataModel: PieChartDataModel.init(dataModel: ChartSample.pieSeriesSample))
