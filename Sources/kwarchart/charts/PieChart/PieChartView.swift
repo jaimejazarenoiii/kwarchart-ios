@@ -8,12 +8,12 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct PieChartView: View {
+public struct PieChartView: View {
     @State private var selectedCell: UUID = UUID()
     
     var dataModel: PieChartDataModel
     
-    var body: some View {
+    public var body: some View {
         ZStack {
             ForEach(dataModel.chartCellModels) { dataSet in
                 PieChartCell(startAngle: self.dataModel.angle(for: dataSet.data.value), endAngle: self.dataModel.startingAngle)

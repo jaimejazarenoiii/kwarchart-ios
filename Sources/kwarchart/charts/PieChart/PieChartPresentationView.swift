@@ -11,7 +11,7 @@ import SwiftUI
 struct PieChartPresentationView: View {
     
     let chartView: PieChartView
-    let chartData: [PieSeries<Any>]
+    let chartData: [PieSeries]
     let legendPosition: LegendPosition
     
     var body: some View {
