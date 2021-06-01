@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		A77A929C262EA919004B289F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A929B262EA919004B289F /* Preview Assets.xcassets */; };
 		A77A92A7262EA91A004B289F /* Kwarchart_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A92A6262EA91A004B289F /* Kwarchart_ExampleTests.swift */; };
 		A77A92B2262EA91A004B289F /* Kwarchart_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A92B1262EA91A004B289F /* Kwarchart_ExampleUITests.swift */; };
+		A77FEAFD2666349B00B3CACE /* kwarchart in Frameworks */ = {isa = PBXBuildFile; productRef = A77FEAFC2666349B00B3CACE /* kwarchart */; };
 		A7E655E42664AE6E00F0C095 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E655E32664AE6E00F0C095 /* PieChartView.swift */; };
 		A7E655E92664AF4B00F0C095 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E655E82664AF4B00F0C095 /* LineChartView.swift */; };
 		A7E655EE2664B26A00F0C095 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E655ED2664B26A00F0C095 /* BarChartView.swift */; };
@@ -48,6 +49,7 @@
 		A77A92AD262EA91A004B289F /* Kwarchart-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kwarchart-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A77A92B1262EA91A004B289F /* Kwarchart_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kwarchart_ExampleUITests.swift; sourceTree = "<group>"; };
 		A77A92B3262EA91A004B289F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77FEAF8266633D000B3CACE /* kwarchart-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "kwarchart-ios"; path = ..; sourceTree = "<group>"; };
 		A7E655E32664AE6E00F0C095 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		A7E655E82664AF4B00F0C095 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		A7E655ED2664B26A00F0C095 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77FEAFD2666349B00B3CACE /* kwarchart in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +84,12 @@
 		A77A9288262EA917004B289F = {
 			isa = PBXGroup;
 			children = (
+				A77FEAF8266633D000B3CACE /* kwarchart-ios */,
 				A77A9293262EA917004B289F /* Kwarchart-Example */,
 				A77A92A5262EA91A004B289F /* Kwarchart-ExampleTests */,
 				A77A92B0262EA91A004B289F /* Kwarchart-ExampleUITests */,
 				A77A9292262EA917004B289F /* Products */,
+				A77FEAEF2666323900B3CACE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +144,13 @@
 			path = "Kwarchart-ExampleUITests";
 			sourceTree = "<group>";
 		};
+		A77FEAEF2666323900B3CACE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +167,9 @@
 			dependencies = (
 			);
 			name = "Kwarchart-Example";
+			packageProductDependencies = (
+				A77FEAFC2666349B00B3CACE /* kwarchart */,
+			);
 			productName = "Kwarchart-Example";
 			productReference = A77A9291262EA917004B289F /* Kwarchart-Example.app */;
 			productType = "com.apple.product-type.application";
@@ -592,6 +607,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A77FEAFC2666349B00B3CACE /* kwarchart */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = kwarchart;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A77A9289262EA917004B289F /* Project object */;
 }
