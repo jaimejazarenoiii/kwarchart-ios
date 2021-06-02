@@ -8,13 +8,13 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct PieChartPresentationView: View {
+public struct PieChartPresentationView: View {
     
     let chartView: PieChartView
     let chartData: [PieSeries]
     let legendPosition: LegendPosition
     
-    var body: some View {
+    public var body: some View {
         HStack {
             Spacer()
             chartView

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LegendPosition {
+public enum LegendPosition {
     case LEFT
     case TOP_LEFT
     case TOP

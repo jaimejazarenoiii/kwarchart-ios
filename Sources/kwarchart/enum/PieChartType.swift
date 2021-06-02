@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum PieChartType {
+public enum PieChartType {
     case NORMAL
     case DOUGHNUT
 }
