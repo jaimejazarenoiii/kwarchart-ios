@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A727F841266A32D8009018F1 /* kwarchart in Frameworks */ = {isa = PBXBuildFile; productRef = A727F840266A32D8009018F1 /* kwarchart */; };
 		A77A9295262EA917004B289F /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A9294262EA917004B289F /* ExampleApp.swift */; };
 		A77A9297262EA917004B289F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77A9296262EA917004B289F /* ContentView.swift */; };
 		A77A9299262EA919004B289F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77A9298262EA919004B289F /* Assets.xcassets */; };
@@ -59,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A77FEAFD2666349B00B3CACE /* kwarchart in Frameworks */,
+				A727F841266A32D8009018F1 /* kwarchart in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				A77FEAF8266633D000B3CACE /* kwarchart-ios */,
-				A77A9293262EA917004B289F /* Kwarchart-Example */,
+				A77A9293262EA917004B289F /* Example */,
 				A77A92A5262EA91A004B289F /* ExampleTests */,
 				A77A92B0262EA91A004B289F /* ExampleUITests */,
 				A77A9292262EA917004B289F /* Products */,
@@ -102,7 +103,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A77A9293262EA917004B289F /* Kwarchart-Example */ = {
+		A77A9293262EA917004B289F /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				A77A9294262EA917004B289F /* ExampleApp.swift */,
@@ -114,7 +115,6 @@
 				A7E655E82664AF4B00F0C095 /* LineChartView.swift */,
 				A7E655ED2664B26A00F0C095 /* BarChartView.swift */,
 			);
-			name = "Kwarchart-Example";
 			path = Example;
 			sourceTree = "<group>";
 		};
@@ -167,6 +167,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				A727F840266A32D8009018F1 /* kwarchart */,
+			);
 			productName = "Kwarchart-Example";
 			productReference = A77A9291262EA917004B289F /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -606,7 +609,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A77FEAFC2666349B00B3CACE /* kwarchart */ = {
+		A727F840266A32D8009018F1 /* kwarchart */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = kwarchart;
 		};
