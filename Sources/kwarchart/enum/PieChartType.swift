@@ -8,6 +8,6 @@
 import Foundation
 
 public enum PieChartType {
-    case NORMAL
-    case DOUGHNUT
+    case normal
+    case doughnut
 }

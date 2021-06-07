@@ -15,11 +15,10 @@ struct PieChartView: View {
                     PieSeries(data: ChartData(key: "Car", value: 900), color: .green, legend: "Car"),
                     PieSeries(data: ChartData(key: "Rent", value: 1000), color: .orange, legend: "Rent"),
                     PieSeries(data: ChartData(key: "Insurance", value: 800), color: .black, legend: "Insurance")]
-
     
     var body: some View {
         VStack(spacing: 10) {
-            KwarChart.drawPieChart(pieChartType: .NORMAL, pieSeries: pieSeries, legendPosition: .BOTTOM)
+            KwarChart.drawPieChart(pieChartType: .normal, pieSeries: pieSeries, legendPosition: .right)
                 .frame(width: 300, height: 250, alignment: .center)
                 .padding()
             

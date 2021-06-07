@@ -36,7 +36,7 @@ public struct PieChartPresentationView: View {
 @available(iOS 13.0, *)
 struct PieChartPresentationView_Previews: PreviewProvider {
     static var previews: some View {
-        PieChartPresentationView(chartView: ChartSample.pieChartViewSample, chartData: ChartSample.pieSeriesSample, legendPosition: .RIGHT)
+        PieChartPresentationView(chartView: ChartSample.pieChartViewSample, chartData: ChartSample.pieSeriesSample, legendPosition: .right)
     }
 }
 

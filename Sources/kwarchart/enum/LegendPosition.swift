@@ -8,12 +8,12 @@
 import Foundation
 
 public enum LegendPosition {
-    case LEFT
-    case TOP_LEFT
-    case TOP
-    case TOP_RIGHT
-    case RIGHT
-    case BOTTOM_RIGHT
-    case BOTTOM
-    case BOTTOM_LEFT
+    case left
+    case topLeft
+    case top
+    case topRight
+    case right
+    case bottomRight
+    case bottom
+    case bottomLeft
 }

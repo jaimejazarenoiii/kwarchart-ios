@@ -14,10 +14,10 @@ public struct KwarChart {
         var pieChart: PieChartView? = nil
         
         switch (pieChartType) {
-        case .NORMAL:
+        case .normal:
             pieChart = PieChartView(dataModel: PieChartDataModel.init(dataModel: pieSeries))
             break;
-        case .DOUGHNUT:
+        case .doughnut:
             break;
         }
         
