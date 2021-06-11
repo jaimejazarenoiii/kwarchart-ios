@@ -93,22 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A748F355264905FE00909626 /* enum */ = {
+		A748F355264905FE00909626 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
 				A759DEA7265E35F900FD177E /* PieChartType.swift */,
 				A759DEAD265E361C00FD177E /* LegendPosition.swift */,
 			);
-			path = enum;
+			path = Enum;
 			sourceTree = "<group>";
 		};
-		A7EEC677265F63C4005F6A1A /* models */ = {
+		A7EEC677265F63C4005F6A1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				A7EEC678265F642D005F6A1A /* ChartData.swift */,
 				A7EEC67E265F68CF005F6A1A /* PieSeries.swift */,
 			);
-			path = models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A7EEC684265F6921005F6A1A /* Charts */ = {
@@ -181,8 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				A7EEC684265F6921005F6A1A /* Charts */,
-				A7EEC677265F63C4005F6A1A /* models */,
-				A748F355264905FE00909626 /* enum */,
+				A7EEC677265F63C4005F6A1A /* Models */,
+				A748F355264905FE00909626 /* Enum */,
 				OBJ_9 /* KwarChart.swift */,
 				A7EEC6C6265F7080005F6A1A /* ChartSample.swift */,
 			);
