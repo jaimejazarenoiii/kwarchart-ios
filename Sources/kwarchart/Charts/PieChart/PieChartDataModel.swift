@@ -18,9 +18,7 @@ final class PieChartDataModel: ObservableObject {
     }
     
     var totalValue: CGFloat {
-        chartCellModels.reduce(CGFloat(0)) { (result, data) -> CGFloat in
-            result + data.data.value
-        }
+        chartCellModels.map { $0.data.value }.reduce(0, +)
     }
     
     func angle(for value: CGFloat) -> Angle {
