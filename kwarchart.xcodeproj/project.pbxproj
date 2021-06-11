@@ -111,12 +111,12 @@
 			path = models;
 			sourceTree = "<group>";
 		};
-		A7EEC684265F6921005F6A1A /* charts */ = {
+		A7EEC684265F6921005F6A1A /* Charts */ = {
 			isa = PBXGroup;
 			children = (
 				A7EEC685265F692A005F6A1A /* PieChart */,
 			);
-			path = charts;
+			path = Charts;
 			sourceTree = "<group>";
 		};
 		A7EEC685265F692A005F6A1A /* PieChart */ = {
@@ -180,7 +180,7 @@
 		OBJ_8 /* kwarchart */ = {
 			isa = PBXGroup;
 			children = (
-				A7EEC684265F6921005F6A1A /* charts */,
+				A7EEC684265F6921005F6A1A /* Charts */,
 				A7EEC677265F63C4005F6A1A /* models */,
 				A748F355264905FE00909626 /* enum */,
 				OBJ_9 /* KwarChart.swift */,
