@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
 struct PieChartCell: Shape {
     let startAngle: Angle
     let endAngle: Angle

@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 13.0, *)
 public struct KwarChart {
     
     public static func drawPieChart(pieChartType: PieChartType, pieSeries: [PieSeries], legendPosition: LegendPosition) -> PieChartPresentationView? {
