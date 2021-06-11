@@ -1,5 +1,5 @@
 import XCTest
-@testable import kwarchart_ios
+@testable import kwarchart
 
 final class kwarchart_iosTests: XCTestCase {
     func testExample() {
