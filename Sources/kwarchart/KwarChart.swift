@@ -14,7 +14,7 @@ public struct KwarChart {
         
         switch (pieChartType) {
         case .normal:
-            pieChart = PieChartView(dataModel: PieChartDataModel.init(dataModel: pieSeries))
+            pieChart = PieChartView(dataModel: PieChartDataModel(dataModel: pieSeries))
             break;
         case .doughnut:
             break;
