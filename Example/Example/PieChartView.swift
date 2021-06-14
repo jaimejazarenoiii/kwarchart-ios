@@ -9,12 +9,12 @@ import SwiftUI
 import kwarchart
 
 struct PieChartView: View {
-    let pieSeries = [PieSeries(data: ChartData(key: "Shopping", value: 500), color: .red, legend: "Shopping"),
-                    PieSeries(data: ChartData(key: "Food", value: 1000), color: .blue, legend: "Food"),
-                    PieSeries(data: ChartData(key: "Electric Bill", value: 500), color: .yellow, legend: "Electricity"),
-                    PieSeries(data: ChartData(key: "Car", value: 900), color: .green, legend: "Car"),
-                    PieSeries(data: ChartData(key: "Rent", value: 1000), color: .orange, legend: "Rent"),
-                    PieSeries(data: ChartData(key: "Insurance", value: 800), color: .black, legend: "Insurance")]
+    let pieSeries = [PieSeries(data: ChartData(key: "Shopping", value: 500, color: .red), legend: "Shopping"),
+                    PieSeries(data: ChartData(key: "Food", value: 1000, color: .blue), legend: "Food"),
+                    PieSeries(data: ChartData(key: "Electric Bill", value: 500, color: .yellow), legend: "Electricity"),
+                    PieSeries(data: ChartData(key: "Car", value: 900, color: .green), legend: "Car"),
+                    PieSeries(data: ChartData(key: "Rent", value: 1000, color: .orange), legend: "Rent"),
+                    PieSeries(data: ChartData(key: "Insurance", value: 800, color: .black), legend: "Insurance")]
     
     var body: some View {
         VStack(spacing: 10) {
