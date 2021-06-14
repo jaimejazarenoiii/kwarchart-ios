@@ -11,12 +11,10 @@ import SwiftUI
 public struct PieSeries: Identifiable {
     public let id = UUID()
     let data: ChartData
-    let color: Color
     let legend: String
     
-    public init(data: ChartData, color: Color, legend: String) {
+    public init(data: ChartData, legend: String) {
         self.data = data
-        self.color = color
         self.legend = legend
     }
 }

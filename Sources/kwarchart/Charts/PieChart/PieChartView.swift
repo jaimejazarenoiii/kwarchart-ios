@@ -16,7 +16,7 @@ public struct PieChartView: View {
         ZStack {
             ForEach(dataModel.chartCellModels) { dataSet in
                 PieChartCell(startAngle: self.dataModel.angle(for: dataSet.data.value), endAngle: self.dataModel.startingAngle)
-                    .foregroundColor(dataSet.color)
+                    .foregroundColor(Color(dataSet.data.color))
             }
         }
     }

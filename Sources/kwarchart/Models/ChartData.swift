@@ -11,9 +11,11 @@ import SwiftUI
 public struct ChartData {
     let key: Any
     let value: CGFloat
+    let color: UIColor
     
-    public init(key: Any, value: CGFloat) {
+    public init(key: Any, value: CGFloat, color: UIColor) {
         self.key = key
         self.value = value
+        self.color = color
     }
 }
