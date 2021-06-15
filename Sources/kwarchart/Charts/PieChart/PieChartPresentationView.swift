@@ -21,7 +21,7 @@ public struct PieChartPresentationView: View {
             VStack(alignment: .leading) {
                 ForEach(chartData) { dataSet in
                     HStack {
-                        Circle().foregroundColor(Color(dataSet.data.color)).fixedSize()
+                        Circle().foregroundColor(dataSet.data.color).fixedSize()
                         Text(dataSet.legend).font(.footnote)
                         Text("\(dataSet.data.value.description)").font(.footnote)
                     }
