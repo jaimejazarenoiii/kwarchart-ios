@@ -34,7 +34,7 @@ jobs:
        bundle update
        
    # Execute Builds 
-   - name: Build 
+    - name: Build 
       run: bundle exec fastlane test
     
     # Run tests
