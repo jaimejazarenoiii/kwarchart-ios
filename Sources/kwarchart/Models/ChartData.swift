@@ -8,14 +8,9 @@
 import Foundation
 import SwiftUI
 
-public struct ChartData {
-    let key: Any
-    let value: CGFloat
-    let color: Color
-    
-    public init(key: Any, value: CGFloat, color: Color) {
-        self.key = key
-        self.value = value
-        self.color = color
-    }
+protocol ChartData {
+    var key: Any { get set }
+    var value: CGFloat { get set }
+    var color: Color { get set }
+    var legend: String { get set }
 }
