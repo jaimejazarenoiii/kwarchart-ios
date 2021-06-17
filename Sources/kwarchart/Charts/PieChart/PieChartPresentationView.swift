@@ -10,7 +10,7 @@ import SwiftUI
 public struct PieChartPresentationView: View {
     
     let chartView: PieChartView
-    let chartData: [PieSeries]
+    let chartData: PieChartDataModel
     let legendPosition: LegendPosition
     
     public var body: some View {
@@ -19,11 +19,11 @@ public struct PieChartPresentationView: View {
             chartView
                 .aspectRatio(contentMode: .fit)
             VStack(alignment: .leading) {
-                ForEach(chartData) { dataSet in
+                ForEach(chartData.chartCellModels) { dataSet in
                     HStack {
-                        Circle().foregroundColor(dataSet.data.color).fixedSize()
+                        Circle().foregroundColor(dataSet.color).fixedSize()
                         Text(dataSet.legend).font(.footnote)
-                        Text("\(dataSet.data.value.description)").font(.footnote)
+                        Text("\(dataSet.value.description)").font(.footnote)
                     }
                 }
             }.aspectRatio(contentMode: .fit)
@@ -34,7 +34,7 @@ public struct PieChartPresentationView: View {
 
 struct PieChartPresentationView_Previews: PreviewProvider {
     static var previews: some View {
-        PieChartPresentationView(chartView: ChartSample.pieChartViewSample, chartData: ChartSample.pieSeriesSample, legendPosition: .right)
+        PieChartPresentationView(chartView: ChartSample.pieChartViewSample, chartData: PieChartDataModel(dataModel: ChartSample.pieSeriesSample), legendPosition: .right)
     }
 }
 

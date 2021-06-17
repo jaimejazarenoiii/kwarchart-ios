@@ -10,11 +10,11 @@ import SwiftUI
 struct PieChartCell: Shape {
     let startAngle: Angle
     let endAngle: Angle
-    
+
     func path(in rect: CGRect) -> Path {
         let center = CGPoint.init(x: (rect.origin.x + rect.width) / 2, y: (rect.origin.y + rect.height) / 2)
         let radii = min(center.x, center.y)
-        
+
         let path = Path { cell in
             cell.addArc(center: center,
                      radius: radii,
@@ -23,7 +23,7 @@ struct PieChartCell: Shape {
                      clockwise: true)
             cell.addLine(to: center)
         }
-        
+
         return path
     }
 }

@@ -9,19 +9,19 @@ import SwiftUI
 
 public struct KwarChart {
     
-    public static func drawPieChart(pieChartType: PieChartType, pieSeries: [PieSeries], legendPosition: LegendPosition) -> PieChartPresentationView? {
+    public static func drawPieChart(pieChartType: PieChartType, chartData: PieChartDataModel, legendPosition: LegendPosition) -> PieChartPresentationView? {
         var pieChart: PieChartView? = nil
         
         switch (pieChartType) {
         case .normal:
-            pieChart = PieChartView(dataModel: PieChartDataModel(dataModel: pieSeries))
+            pieChart = PieChartView(dataModel: chartData)
             break;
         case .doughnut:
             break;
         }
         
         guard let chartView: PieChartView = pieChart else { return nil }
-        let pieChartRepresentation = PieChartPresentationView(chartView: chartView, chartData: pieSeries, legendPosition: legendPosition)
+        let pieChartRepresentation = PieChartPresentationView(chartView: chartView, chartData: chartData, legendPosition: legendPosition)
         return pieChartRepresentation
     }
 }

@@ -8,17 +8,17 @@
 import Foundation
 import SwiftUI
 
-final class PieChartDataModel: ObservableObject {
-    var chartCellModels: [PieSeries] = []
+final public class PieChartDataModel: ObservableObject {
+    public var chartCellModels: [PieChartCellData] = []
     var startingAngle = Angle(degrees: 0)
     private var finalRelativeAngle = Angle(degrees: 0)
     
-    init(dataModel: [PieSeries]) {
+    init(dataModel: [PieChartCellData]) {
         chartCellModels = dataModel
     }
     
     var totalValue: CGFloat {
-        chartCellModels.map { $0.data.value }.reduce(0, +)
+        chartCellModels.map { $0.value }.reduce(0, +)
     }
     
     func angle(for value: CGFloat) -> Angle {
