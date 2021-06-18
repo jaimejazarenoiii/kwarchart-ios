@@ -18,7 +18,7 @@ struct PieChartView: View {
     
     var body: some View {
         VStack(spacing: 10) {
-            KwarChart.drawPieChart(pieChartType: .normal, chartData: pieSeries, legendPosition: .right)
+            KCPieChartPresentationView(chartView: ChartSample.pieChartViewSample, chartData: PieChartDataModel(dataModel: pieSeries), legendPosition: LegendPosition.right)
                 .frame(width: 300, height: 250, alignment: .center)
                 .padding()
             
