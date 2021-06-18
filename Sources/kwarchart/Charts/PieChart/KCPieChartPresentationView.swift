@@ -7,11 +7,17 @@
 
 import SwiftUI
 
-public struct PieChartPresentationView: View {
+public struct KCPieChartPresentationView: View {
     
     let chartView: KCPieChartView
     let chartData: PieChartDataModel
     let legendPosition: LegendPosition
+    
+    public init(chartView: KCPieChartView, chartData: PieChartDataModel, legendPosition: LegendPosition) {
+        self.chartView = chartView
+        self.chartData = chartData
+        self.legendPosition = legendPosition
+    }
     
     public var body: some View {
         HStack {
@@ -32,9 +38,9 @@ public struct PieChartPresentationView: View {
     }
 }
 
-struct PieChartPresentationView_Previews: PreviewProvider {
+struct KCPieChartPresentationView_Previews: PreviewProvider {
     static var previews: some View {
-        PieChartPresentationView(chartView: ChartSample.pieChartViewSample, chartData: PieChartDataModel(dataModel: ChartSample.pieSeriesSample), legendPosition: .right)
+        KCPieChartPresentationView(chartView: ChartSample.pieChartViewSample, chartData: PieChartDataModel(dataModel: ChartSample.pieSeriesSample), legendPosition: .right)
     }
 }
 
