@@ -30,7 +30,6 @@
 		A7EEC693265F6D88005F6A1A /* PieChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */; };
 		A7EEC6B1265F6E27005F6A1A /* KCPieChartPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6B0265F6E27005F6A1A /* KCPieChartPresentationView.swift */; };
 		A7EEC6C7265F7080005F6A1A /* ChartSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6C6265F7080005F6A1A /* ChartSample.swift */; };
-		OBJ_24 /* KwarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* KwarChart.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCTestManifests.swift */; };
 		OBJ_43 /* kwarchartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* kwarchartTests.swift */; };
@@ -69,7 +68,6 @@
 		OBJ_17 /* Kwarchart-Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Kwarchart-Example"; sourceTree = SOURCE_ROOT; };
 		OBJ_18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* KwarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KwarChart.swift; sourceTree = "<group>"; };
 		"kwarchart::kwarchart::Product" /* kwarchart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = kwarchart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"kwarchart::kwarchartTests::Product" /* kwarchartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = kwarchartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -183,7 +181,6 @@
 				A7EEC684265F6921005F6A1A /* Charts */,
 				A7EEC677265F63C4005F6A1A /* Models */,
 				A748F355264905FE00909626 /* Enum */,
-				OBJ_9 /* KwarChart.swift */,
 				A7EEC6C6265F7080005F6A1A /* ChartSample.swift */,
 			);
 			name = kwarchart;
@@ -275,7 +272,6 @@
 			buildActionMask = 0;
 			files = (
 				A7EEC68D265F6D51005F6A1A /* KCPieChartView.swift in Sources */,
-				OBJ_24 /* KwarChart.swift in Sources */,
 				A759DEA8265E35F900FD177E /* PieChartType.swift in Sources */,
 				A7EEC679265F642D005F6A1A /* ChartData.swift in Sources */,
 				A7EEC6C7265F7080005F6A1A /* ChartSample.swift in Sources */,
