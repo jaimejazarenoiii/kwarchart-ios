@@ -9,16 +9,16 @@ import SwiftUI
 import kwarchart
 
 struct PieChartView: View {
-    let pieSeries = [PieSeries(data: ChartData(key: "Shopping", value: 500, color: .red), legend: "Shopping"),
-                    PieSeries(data: ChartData(key: "Food", value: 1000, color: .blue), legend: "Food"),
-                    PieSeries(data: ChartData(key: "Electric Bill", value: 500, color: .yellow), legend: "Electricity"),
-                    PieSeries(data: ChartData(key: "Car", value: 900, color: .green), legend: "Car"),
-                    PieSeries(data: ChartData(key: "Rent", value: 1000, color: .orange), legend: "Rent"),
-                    PieSeries(data: ChartData(key: "Insurance", value: 800, color: .black), legend: "Insurance")]
+    let pieSeries = [PieChartData(key: "Shopping", value: 500, color: .red, legend: "Shopping"),
+                     PieChartData(key: "Food", value: 1000, color: .blue, legend: "Food"),
+                     PieChartData(key: "Electric Bill", value: 500, color: .yellow, legend: "Electricity"),
+                     PieChartData(key: "Car", value: 900, color: .green, legend: "Car"),
+                     PieChartData(key: "Rent", value: 1000, color: .orange, legend: "Rent"),
+                     PieChartData(key: "Insurance", value: 800, color: .black, legend: "Insurance")]
     
     var body: some View {
         VStack(spacing: 10) {
-            KwarChart.drawPieChart(pieChartType: .normal, pieSeries: pieSeries, legendPosition: .right)
+            KwarChart.drawPieChart(pieChartType: .normal, chartData: pieSeries, legendPosition: .right)
                 .frame(width: 300, height: 250, alignment: .center)
                 .padding()
             
