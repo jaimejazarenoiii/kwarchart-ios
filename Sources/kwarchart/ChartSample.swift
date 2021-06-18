@@ -16,5 +16,5 @@ public struct ChartSample {
                                        PieChartData(key: " ", value: 100, color: .black, legend: "String2"),
                                        PieChartData(key: " ", value: 100, color: .orange, legend: "String3")]
     
-    public static let pieChartViewSample = PieChartView(dataModel: PieChartDataModel(dataModel: pieSeriesSample))
+    public static let pieChartViewSample = KCPieChartView(dataModel: PieChartDataModel(dataModel: pieSeriesSample), pieChartType: .normal)
 }

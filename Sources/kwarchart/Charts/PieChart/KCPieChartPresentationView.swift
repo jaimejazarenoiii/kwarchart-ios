@@ -9,7 +9,7 @@ import SwiftUI
 
 public struct PieChartPresentationView: View {
     
-    let chartView: PieChartView
+    let chartView: KCPieChartView
     let chartData: PieChartDataModel
     let legendPosition: LegendPosition
     

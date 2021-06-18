@@ -26,9 +26,9 @@
 		A759DEAE265E361C00FD177E /* LegendPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759DEAD265E361C00FD177E /* LegendPosition.swift */; };
 		A7EEC679265F642D005F6A1A /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC678265F642D005F6A1A /* ChartData.swift */; };
 		A7EEC687265F6CAA005F6A1A /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */; };
-		A7EEC68D265F6D51005F6A1A /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC68C265F6D51005F6A1A /* PieChartView.swift */; };
+		A7EEC68D265F6D51005F6A1A /* KCPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC68C265F6D51005F6A1A /* KCPieChartView.swift */; };
 		A7EEC693265F6D88005F6A1A /* PieChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */; };
-		A7EEC6B1265F6E27005F6A1A /* PieChartPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6B0265F6E27005F6A1A /* PieChartPresentationView.swift */; };
+		A7EEC6B1265F6E27005F6A1A /* KCPieChartPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6B0265F6E27005F6A1A /* KCPieChartPresentationView.swift */; };
 		A7EEC6C7265F7080005F6A1A /* ChartSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6C6265F7080005F6A1A /* ChartSample.swift */; };
 		OBJ_24 /* KwarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* KwarChart.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
@@ -60,9 +60,9 @@
 		A759DEAD265E361C00FD177E /* LegendPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendPosition.swift; sourceTree = "<group>"; };
 		A7EEC678265F642D005F6A1A /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
-		A7EEC68C265F6D51005F6A1A /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		A7EEC68C265F6D51005F6A1A /* KCPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCPieChartView.swift; sourceTree = "<group>"; };
 		A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartDataModel.swift; sourceTree = "<group>"; };
-		A7EEC6B0265F6E27005F6A1A /* PieChartPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartPresentationView.swift; sourceTree = "<group>"; };
+		A7EEC6B0265F6E27005F6A1A /* KCPieChartPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCPieChartPresentationView.swift; sourceTree = "<group>"; };
 		A7EEC6C6265F7080005F6A1A /* ChartSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSample.swift; sourceTree = "<group>"; };
 		OBJ_12 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* kwarchartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwarchartTests.swift; sourceTree = "<group>"; };
@@ -122,9 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */,
-				A7EEC68C265F6D51005F6A1A /* PieChartView.swift */,
+				A7EEC68C265F6D51005F6A1A /* KCPieChartView.swift */,
 				A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */,
-				A7EEC6B0265F6E27005F6A1A /* PieChartPresentationView.swift */,
+				A7EEC6B0265F6E27005F6A1A /* KCPieChartPresentationView.swift */,
 				A7328EF8267A05CE00192A0E /* PieChartData.swift */,
 			);
 			path = PieChart;
@@ -274,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				A7EEC68D265F6D51005F6A1A /* PieChartView.swift in Sources */,
+				A7EEC68D265F6D51005F6A1A /* KCPieChartView.swift in Sources */,
 				OBJ_24 /* KwarChart.swift in Sources */,
 				A759DEA8265E35F900FD177E /* PieChartType.swift in Sources */,
 				A7EEC679265F642D005F6A1A /* ChartData.swift in Sources */,
@@ -283,7 +283,7 @@
 				A7EEC693265F6D88005F6A1A /* PieChartDataModel.swift in Sources */,
 				A7328EF9267A05CE00192A0E /* PieChartData.swift in Sources */,
 				A7EEC687265F6CAA005F6A1A /* PieChartCell.swift in Sources */,
-				A7EEC6B1265F6E27005F6A1A /* PieChartPresentationView.swift in Sources */,
+				A7EEC6B1265F6E27005F6A1A /* KCPieChartPresentationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
