@@ -9,11 +9,11 @@ import Foundation
 import SwiftUI
 
 final public class PieChartDataModel: ObservableObject {
-    public var chartCellModels: [PieChartCellData] = []
+    public var chartCellModels: [PieChartData] = []
     var startingAngle = Angle(degrees: 0)
     private var finalRelativeAngle = Angle(degrees: 0)
     
-    init(dataModel: [PieChartCellData]) {
+    init(dataModel: [PieChartData]) {
         chartCellModels = dataModel
     }
     

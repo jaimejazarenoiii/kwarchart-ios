@@ -8,14 +8,14 @@
 import Foundation
 import SwiftUI
 
-public struct PieChartCellData: Identifiable, ChartData {
+public struct PieChartData: Identifiable, ChartData {
     public var id = UUID()
     public var key: Any
     public var value: CGFloat
     public var color: Color
     public var legend: String
     
-    init(key: Any, value: CGFloat, color: Color, legend: String) {
+    public init(key: Any, value: CGFloat, color: Color, legend: String) {
         self.key = key
         self.value = value
         self.color = color
