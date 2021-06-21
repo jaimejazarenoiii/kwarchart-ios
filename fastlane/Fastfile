@@ -16,9 +16,20 @@
 default_platform(:ios)
 
 platform :ios do
+
+  before_all do
+    ensure_git_status_clean
+    update_fastlane
+  end
+
   desc "Run test using fast lane"
   lane :tests do 
-   run_tests(scheme: "kwarchart",
-	     devices: ["iPhone 11"])
+    run_tests(scheme: "kwarchart", 
+              devices: ["iPhone 11"])
+  end
+
+  after_all do |lane|
+    reset_git_repo(skip_clean: true)
+    UI.important "#{lane} Fin."
   end
 end

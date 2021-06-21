@@ -20,6 +20,20 @@
                ReferencedContainer = "container:kwarchart.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "kwarchart::kwarchartTests"
+               BuildableName = "kwarchartTests.xctest"
+               BlueprintName = "kwarchartTests"
+               ReferencedContainer = "container:kwarchart.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
