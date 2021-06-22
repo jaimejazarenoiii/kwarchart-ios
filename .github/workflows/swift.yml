@@ -35,6 +35,6 @@ jobs:
        
     # Execute Builds 
     - name: Build 
-      run: bundle exec fastlane ios test
+      run: bundle exec fastlane ios tests
     
     # Run tests
