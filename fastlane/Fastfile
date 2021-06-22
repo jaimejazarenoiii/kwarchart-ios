@@ -19,7 +19,6 @@ platform :ios do
 
   before_all do
     update_fastlane
-    ensure_git_status_clean
   end
 
   desc "Run test using fast lane"
