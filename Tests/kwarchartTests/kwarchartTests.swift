@@ -6,6 +6,7 @@ final class kwarchart_iosTests: XCTestCase {
         super.setUp()
 
         let app = XCUIApplication()
+        app.launchArguments = ["tests"]
         setupSnapshot(app)
         app.launch()
     }
