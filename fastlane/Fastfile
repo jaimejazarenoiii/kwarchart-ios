@@ -17,10 +17,6 @@ default_platform(:ios)
 
 platform :ios do
 
-  before_all do
-    update_fastlane
-  end
-
   desc "Run test using fast lane"
   lane :tests do 
     run_tests(scheme: "kwarchart", 
@@ -31,6 +27,12 @@ platform :ios do
                         "iPhone SE (2nd generation)",
                         "iPhone 12 Pro Max"])
   end
+  
+  desc "Fastlane status"
+  lane : fast do 
+    ensure_git_status_clean
+    update_fastlane
+  end 
 
   after_all do |lane|
     reset_git_repo(skip_clean: true)
