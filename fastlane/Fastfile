@@ -27,9 +27,4 @@ platform :ios do
     ensure_git_status_clean
     update_fastlane
   end 
-
-  after_all do |lane|
-    reset_git_repo(skip_clean: true)
-    UI.important "#{lane} Fin."
-  end
 end
