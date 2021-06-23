@@ -19,13 +19,7 @@ platform :ios do
 
   desc "Run test using fast lane"
   lane :tests do 
-    run_tests(scheme: "kwarchart", 
-              devices: ["iPhone 11", 
-		       "iPhone 8",
-                        "iPhone 8 Plus",
-                        "iPhone X",
-                        "iPhone SE (2nd generation)",
-                        "iPhone 12 Pro Max"])
+    run_tests(scheme: "kwarchart")
   end
   
   desc "Fastlane status"

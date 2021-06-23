@@ -1,14 +1,9 @@
 import XCTest
 @testable import kwarchart
 
-final class kwarchart_iosTests: XCTestCase {
+final class kwarchartTests: XCTestCase {
     override func setUp() {
         super.setUp()
-
-        let app = XCUIApplication()
-        app.launchArguments = ["tests"]
-        setupSnapshot(app)
-        app.launch()
     }
 
     func testExample() {
