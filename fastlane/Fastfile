@@ -21,10 +21,10 @@ platform :ios do
   lane :tests do 
     run_tests(scheme: "kwarchart")
   end
-  
+
   desc "Fastlane status"
   lane :fast do 
     ensure_git_status_clean
-    update_fastlane
-  end 
+  end
+
 end
