@@ -1,7 +1,11 @@
 import XCTest
-@testable import kwarchart_ios
+@testable import kwarchart
 
-final class kwarchart_iosTests: XCTestCase {
+final class kwarchartTests: XCTestCase {
+    override func setUp() {
+        super.setUp()
+    }
+
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct

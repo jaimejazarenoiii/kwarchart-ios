@@ -28,10 +28,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     
-    # Build project
-    - name: Build
+    # Run bundler
+    - name: Run Bundler
       run: |
-        set -o pipefail && xcodebuild clean build -scheme kwarchart CODE_SIGNING_ALLOWED=NO
+       bundle update
+       
+    # Execute Builds 
+    - name: Build 
+      run: bundle exec fastlane ios tests
     
     # Run tests
-
