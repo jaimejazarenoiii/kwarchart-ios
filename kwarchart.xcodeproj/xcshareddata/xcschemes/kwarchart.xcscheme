@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
+<<<<<<< HEAD
    LastUpgradeVersion = "1240"
+=======
+   LastUpgradeVersion = "1220"
+>>>>>>> feature/Pie_Chart
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -20,6 +24,7 @@
                ReferencedContainer = "container:kwarchart.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+<<<<<<< HEAD
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
@@ -34,6 +39,8 @@
                ReferencedContainer = "container:kwarchart.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+=======
+>>>>>>> feature/Pie_Chart
       </BuildActionEntries>
    </BuildAction>
    <TestAction

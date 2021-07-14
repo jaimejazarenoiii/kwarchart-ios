@@ -21,8 +21,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		04704DF72680AAC5006A27B5 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04704DF62680AAC5006A27B5 /* SnapshotHelper.swift */; };
-		OBJ_24 /* kwarchart.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* kwarchart.swift */; };
+		A7328EF9267A05CE00192A0E /* PieChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7328EF8267A05CE00192A0E /* PieChartData.swift */; };
+		A759DEA8265E35F900FD177E /* PieChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759DEA7265E35F900FD177E /* PieChartType.swift */; };
+		A759DEAE265E361C00FD177E /* LegendPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759DEAD265E361C00FD177E /* LegendPosition.swift */; };
+		A7EEC679265F642D005F6A1A /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC678265F642D005F6A1A /* ChartData.swift */; };
+		A7EEC687265F6CAA005F6A1A /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */; };
+		A7EEC68D265F6D51005F6A1A /* KCPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC68C265F6D51005F6A1A /* KCPieChartView.swift */; };
+		A7EEC693265F6D88005F6A1A /* PieChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */; };
+		A7EEC6B1265F6E27005F6A1A /* KCPieChartPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6B0265F6E27005F6A1A /* KCPieChartPresentationView.swift */; };
+		A7EEC6C7265F7080005F6A1A /* ChartSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6C6265F7080005F6A1A /* ChartSample.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCTestManifests.swift */; };
 		OBJ_43 /* kwarchartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* kwarchartTests.swift */; };
@@ -30,14 +37,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04704DF52680AA95006A27B5 /* PBXContainerItemProxy */ = {
+		A748F34A2648FE8900909626 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "kwarchart::kwarchart";
 			remoteInfo = kwarchart;
 		};
-		04704DFA2680AAC5006A27B5 /* PBXContainerItemProxy */ = {
+		A748F34B2648FE8900909626 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -47,15 +54,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04704DF62680AAC5006A27B5 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		A7328EF8267A05CE00192A0E /* PieChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PieChartData.swift; path = Sources/kwarchart/Charts/PieChart/PieChartData.swift; sourceTree = SOURCE_ROOT; };
+		A759DEA7265E35F900FD177E /* PieChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartType.swift; sourceTree = "<group>"; };
+		A759DEAD265E361C00FD177E /* LegendPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendPosition.swift; sourceTree = "<group>"; };
+		A7EEC678265F642D005F6A1A /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
+		A7EEC68C265F6D51005F6A1A /* KCPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCPieChartView.swift; sourceTree = "<group>"; };
+		A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartDataModel.swift; sourceTree = "<group>"; };
+		A7EEC6B0265F6E27005F6A1A /* KCPieChartPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCPieChartPresentationView.swift; sourceTree = "<group>"; };
+		A7EEC6C6265F7080005F6A1A /* ChartSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSample.swift; sourceTree = "<group>"; };
 		OBJ_12 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* kwarchartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwarchartTests.swift; sourceTree = "<group>"; };
-		OBJ_17 /* Kwarchart-Example */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Kwarchart-Example"; sourceTree = SOURCE_ROOT; };
+		OBJ_17 /* Kwarchart-Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Kwarchart-Example"; sourceTree = SOURCE_ROOT; };
 		OBJ_18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* kwarchart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwarchart.swift; sourceTree = "<group>"; };
-		"kwarchart::kwarchart::Product" /* kwarchart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = kwarchart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"kwarchart::kwarchartTests::Product" /* kwarchartTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = kwarchartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"kwarchart::kwarchart::Product" /* kwarchart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = kwarchart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"kwarchart::kwarchartTests::Product" /* kwarchartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = kwarchartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A748F355264905FE00909626 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				A759DEA7265E35F900FD177E /* PieChartType.swift */,
+				A759DEAD265E361C00FD177E /* LegendPosition.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		A7EEC677265F63C4005F6A1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEC678265F642D005F6A1A /* ChartData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7EEC684265F6921005F6A1A /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEC685265F692A005F6A1A /* PieChart */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		A7EEC685265F692A005F6A1A /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */,
+				A7EEC68C265F6D51005F6A1A /* KCPieChartView.swift */,
+				A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */,
+				A7EEC6B0265F6E27005F6A1A /* KCPieChartPresentationView.swift */,
+				A7328EF8267A05CE00192A0E /* PieChartData.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +139,6 @@
 		OBJ_11 /* kwarchartTests */ = {
 			isa = PBXGroup;
 			children = (
-				04704DF62680AAC5006A27B5 /* SnapshotHelper.swift */,
 				OBJ_12 /* XCTestManifests.swift */,
 				OBJ_13 /* kwarchartTests.swift */,
 			);
@@ -105,7 +155,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -115,7 +165,6 @@
 				OBJ_17 /* Kwarchart-Example */,
 				OBJ_18 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -129,7 +178,10 @@
 		OBJ_8 /* kwarchart */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* kwarchart.swift */,
+				A7EEC684265F6921005F6A1A /* Charts */,
+				A7EEC677265F63C4005F6A1A /* Models */,
+				A748F355264905FE00909626 /* Enum */,
+				A7EEC6C6265F7080005F6A1A /* ChartSample.swift */,
 			);
 			name = kwarchart;
 			path = Sources/kwarchart;
@@ -201,7 +253,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -219,7 +271,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_24 /* kwarchart.swift in Sources */,
+				A7EEC68D265F6D51005F6A1A /* KCPieChartView.swift in Sources */,
+				A759DEA8265E35F900FD177E /* PieChartType.swift in Sources */,
+				A7EEC679265F642D005F6A1A /* ChartData.swift in Sources */,
+				A7EEC6C7265F7080005F6A1A /* ChartSample.swift in Sources */,
+				A759DEAE265E361C00FD177E /* LegendPosition.swift in Sources */,
+				A7EEC693265F6D88005F6A1A /* PieChartDataModel.swift in Sources */,
+				A7328EF9267A05CE00192A0E /* PieChartData.swift in Sources */,
+				A7EEC687265F6CAA005F6A1A /* PieChartCell.swift in Sources */,
+				A7EEC6B1265F6E27005F6A1A /* KCPieChartPresentationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +297,6 @@
 			files = (
 				OBJ_42 /* XCTestManifests.swift in Sources */,
 				OBJ_43 /* kwarchartTests.swift in Sources */,
-				04704DF72680AAC5006A27B5 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,12 +306,12 @@
 		OBJ_36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "kwarchart::kwarchartTests" /* kwarchartTests */;
-			targetProxy = 04704DFA2680AAC5006A27B5 /* PBXContainerItemProxy */;
+			targetProxy = A748F34B2648FE8900909626 /* PBXContainerItemProxy */;
 		};
 		OBJ_46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "kwarchart::kwarchart" /* kwarchart */;
-			targetProxy = 04704DF52680AA95006A27B5 /* PBXContainerItemProxy */;
+			targetProxy = A748F34A2648FE8900909626 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -267,7 +326,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = kwarchart.xcodeproj/kwarchart_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
@@ -277,6 +336,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = kwarchart;
@@ -295,7 +355,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = kwarchart.xcodeproj/kwarchart_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
@@ -305,6 +365,7 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = kwarchart;
@@ -318,6 +379,7 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -package-description-version 5.3.0";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -327,6 +389,7 @@
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -package-description-version 5.3.0";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -346,12 +409,13 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USE_HEADERMAP = NO;
@@ -361,12 +425,14 @@
 		OBJ_34 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SUPPORTS_MACCATALYST = NO;
 			};
 			name = Debug;
 		};
 		OBJ_35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SUPPORTS_MACCATALYST = NO;
 			};
 			name = Release;
 		};
@@ -387,6 +453,8 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = kwarchartTests;
@@ -407,12 +475,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
-				);
+				);				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				USE_HEADERMAP = NO;
@@ -436,6 +504,8 @@
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = kwarchartTests;
