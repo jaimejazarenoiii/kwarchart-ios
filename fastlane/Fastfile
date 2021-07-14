@@ -19,7 +19,7 @@ platform :ios do
 
   desc "Run test using fast lane"
   lane :tests do 
-    run_tests(scheme: "kwarchart")
+    run_tests(scheme: "Kwarchart")
   end
 
   desc "Fastlane status"

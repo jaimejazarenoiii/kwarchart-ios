@@ -24,6 +24,7 @@
                ReferencedContainer = "container:kwarchart.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+<<<<<<< HEAD:kwarchart.xcodeproj/xcshareddata/xcschemes/kwarchart.xcscheme
 <<<<<<< HEAD
          <BuildActionEntry
             buildForTesting = "YES"
@@ -41,6 +42,8 @@
          </BuildActionEntry>
 =======
 >>>>>>> feature/Pie_Chart
+=======
+>>>>>>> feature/fastlane-setup:kwarchart.xcodeproj/xcshareddata/xcschemes/Kwarchart.xcscheme
       </BuildActionEntries>
    </BuildAction>
    <TestAction

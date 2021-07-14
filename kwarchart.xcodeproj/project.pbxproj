@@ -68,7 +68,8 @@
 		OBJ_17 /* Kwarchart-Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Kwarchart-Example"; sourceTree = SOURCE_ROOT; };
 		OBJ_18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		"kwarchart::kwarchart::Product" /* kwarchart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = kwarchart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_9 /* kwarchart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwarchart.swift; sourceTree = "<group>"; };
+		"kwarchart::kwarchart::Product" /* kwarchart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = kwarchart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"kwarchart::kwarchartTests::Product" /* kwarchartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = kwarchartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -447,7 +448,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = kwarchart.xcodeproj/kwarchartTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
@@ -498,7 +499,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = kwarchart.xcodeproj/kwarchartTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
