@@ -12,3 +12,11 @@ Kwarchart-Example/Kwarchart-Example.xcodeproj/project.xcworkspace/xcshareddata/I
 kwarchart.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
 kwarchart.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
 kwarchart.xcodeproj/xcshareddata/xcschemes/kwarchart-Package.xcscheme
+
+## Github store
+.DS_Store
+
+## Fastlane
+fastlane/report.xml
+fastlane/test_output/report.junit
+fastlane/test_output/report.html
