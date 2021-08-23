@@ -17,7 +17,7 @@ final public class PieChartDataModel: ObservableObject {
         chartCellModels = dataModel
     }
     
-    var totalValue: CGFloat {
+    public var totalValue: CGFloat {
         chartCellModels.map { $0.value }.reduce(0, +)
     }
     
@@ -26,7 +26,6 @@ final public class PieChartDataModel: ObservableObject {
             startingAngle = finalRelativeAngle
         }
         finalRelativeAngle += Angle(degrees: Double(value / totalValue) * 360)
-        print(finalRelativeAngle.degrees)
         return finalRelativeAngle
     }
 }
