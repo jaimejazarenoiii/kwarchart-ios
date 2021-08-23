@@ -22,14 +22,17 @@
 
 /* Begin PBXBuildFile section */
 		A7328EF9267A05CE00192A0E /* PieChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7328EF8267A05CE00192A0E /* PieChartData.swift */; };
+		A74E4655269312AB00723903 /* LegendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E4654269312AB00723903 /* LegendsView.swift */; };
 		A759DEA8265E35F900FD177E /* PieChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759DEA7265E35F900FD177E /* PieChartType.swift */; };
 		A759DEAE265E361C00FD177E /* LegendPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A759DEAD265E361C00FD177E /* LegendPosition.swift */; };
+		A7D16419268F1548007B8AA5 /* BasePresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D16418268F1548007B8AA5 /* BasePresentationView.swift */; };
 		A7EEC679265F642D005F6A1A /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC678265F642D005F6A1A /* ChartData.swift */; };
 		A7EEC687265F6CAA005F6A1A /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */; };
 		A7EEC68D265F6D51005F6A1A /* KCPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC68C265F6D51005F6A1A /* KCPieChartView.swift */; };
 		A7EEC693265F6D88005F6A1A /* PieChartDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */; };
 		A7EEC6B1265F6E27005F6A1A /* KCPieChartPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6B0265F6E27005F6A1A /* KCPieChartPresentationView.swift */; };
 		A7EEC6C7265F7080005F6A1A /* ChartSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEC6C6265F7080005F6A1A /* ChartSample.swift */; };
+		A7F0015826A1807C00B47847 /* LegendsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0015726A1807C00B47847 /* LegendsDataModel.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCTestManifests.swift */; };
 		OBJ_43 /* kwarchartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* kwarchartTests.swift */; };
@@ -55,14 +58,17 @@
 
 /* Begin PBXFileReference section */
 		A7328EF8267A05CE00192A0E /* PieChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PieChartData.swift; path = Sources/kwarchart/Charts/PieChart/PieChartData.swift; sourceTree = SOURCE_ROOT; };
+		A74E4654269312AB00723903 /* LegendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LegendsView.swift; path = Sources/kwarchart/charts/LegendsView/LegendsView.swift; sourceTree = SOURCE_ROOT; };
 		A759DEA7265E35F900FD177E /* PieChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartType.swift; sourceTree = "<group>"; };
 		A759DEAD265E361C00FD177E /* LegendPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendPosition.swift; sourceTree = "<group>"; };
+		A7D16418268F1548007B8AA5 /* BasePresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentationView.swift; sourceTree = "<group>"; };
 		A7EEC678265F642D005F6A1A /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		A7EEC686265F6CAA005F6A1A /* PieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
 		A7EEC68C265F6D51005F6A1A /* KCPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCPieChartView.swift; sourceTree = "<group>"; };
 		A7EEC692265F6D88005F6A1A /* PieChartDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartDataModel.swift; sourceTree = "<group>"; };
 		A7EEC6B0265F6E27005F6A1A /* KCPieChartPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCPieChartPresentationView.swift; sourceTree = "<group>"; };
 		A7EEC6C6265F7080005F6A1A /* ChartSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSample.swift; sourceTree = "<group>"; };
+		A7F0015726A1807C00B47847 /* LegendsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LegendsDataModel.swift; path = Sources/kwarchart/charts/LegendsView/LegendsDataModel.swift; sourceTree = SOURCE_ROOT; };
 		OBJ_12 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* kwarchartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwarchartTests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* Kwarchart-Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Kwarchart-Example"; sourceTree = SOURCE_ROOT; };
@@ -100,6 +106,23 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
+		A74E465326930FA700723903 /* LegendsView */ = {
+			isa = PBXGroup;
+			children = (
+				A74E4654269312AB00723903 /* LegendsView.swift */,
+				A7F0015726A1807C00B47847 /* LegendsDataModel.swift */,
+			);
+			path = LegendsView;
+			sourceTree = "<group>";
+		};
+		A7D16417268F151A007B8AA5 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				A7D16418268F1548007B8AA5 /* BasePresentationView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
 		A7EEC677265F63C4005F6A1A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +134,7 @@
 		A7EEC684265F6921005F6A1A /* Charts */ = {
 			isa = PBXGroup;
 			children = (
+				A74E465326930FA700723903 /* LegendsView */,
 				A7EEC685265F692A005F6A1A /* PieChart */,
 			);
 			path = Charts;
@@ -178,6 +202,7 @@
 		OBJ_8 /* kwarchart */ = {
 			isa = PBXGroup;
 			children = (
+				A7D16417268F151A007B8AA5 /* BaseView */,
 				A7EEC684265F6921005F6A1A /* Charts */,
 				A7EEC677265F63C4005F6A1A /* Models */,
 				A748F355264905FE00909626 /* Enum */,
@@ -278,7 +303,10 @@
 				A759DEAE265E361C00FD177E /* LegendPosition.swift in Sources */,
 				A7EEC693265F6D88005F6A1A /* PieChartDataModel.swift in Sources */,
 				A7328EF9267A05CE00192A0E /* PieChartData.swift in Sources */,
+				A7D16419268F1548007B8AA5 /* BasePresentationView.swift in Sources */,
+				A74E4655269312AB00723903 /* LegendsView.swift in Sources */,
 				A7EEC687265F6CAA005F6A1A /* PieChartCell.swift in Sources */,
+				A7F0015826A1807C00B47847 /* LegendsDataModel.swift in Sources */,
 				A7EEC6B1265F6E27005F6A1A /* KCPieChartPresentationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
