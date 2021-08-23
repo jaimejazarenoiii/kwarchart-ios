@@ -9,38 +9,35 @@ import SwiftUI
 
 public struct KCPieChartPresentationView: View {
     
-    let chartView: KCPieChartView
     let chartData: PieChartDataModel
     let legendPosition: LegendPosition
+    let pieChartType: PieChartType
+    let legendsData: [ChartDataObject]
     
-    public init(chartView: KCPieChartView, chartData: PieChartDataModel, legendPosition: LegendPosition) {
-        self.chartView = chartView
+    public init(pieChartType: PieChartType, chartData: PieChartDataModel, legendPosition: LegendPosition) {
+        self.pieChartType = pieChartType
         self.chartData = chartData
         self.legendPosition = legendPosition
+        self.legendsData = chartData.chartCellModels.map ({ ChartDataObject( key: $0.key,
+                                                                         value: $0.value,
+                                                                         color: $0.color,
+                                                                         legend: $0.legend)
+        })
     }
     
     public var body: some View {
-        HStack {
-            Spacer()
-            chartView
+        BasePresentationView(chartView: {
+            KCPieChartView(dataModel: chartData, pieChartType: pieChartType)
                 .aspectRatio(contentMode: .fit)
-            VStack(alignment: .leading) {
-                ForEach(chartData.chartCellModels) { dataSet in
-                    HStack {
-                        Circle().foregroundColor(dataSet.color).fixedSize()
-                        Text(dataSet.legend).font(.footnote)
-                        Text("\(dataSet.value.description)").font(.footnote)
-                    }
-                }
-            }.aspectRatio(contentMode: .fit)
-            Spacer()
-        }
+        }, legendsView: {
+            LegendsView(chartData: legendsData, legendPosition: .right, shouldDisplayLegendValue: true)
+        })
     }
 }
 
 struct KCPieChartPresentationView_Previews: PreviewProvider {
     static var previews: some View {
-        KCPieChartPresentationView(chartView: ChartSample.pieChartViewSample, chartData: PieChartDataModel(dataModel: ChartSample.pieSeriesSample), legendPosition: .right)
+        KCPieChartPresentationView(pieChartType: PieChartType.normal, chartData: PieChartDataModel(dataModel: ChartSample.pieSeriesSample), legendPosition: .right)
     }
 }
 
