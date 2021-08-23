@@ -14,3 +14,11 @@ protocol ChartData {
     var color: Color { get set }
     var legend: String { get set }
 }
+
+public struct ChartDataObject: ChartData, Identifiable {
+    public let id = UUID()
+    public var key: Any
+    public var value: CGFloat
+    public var color: Color
+    public var legend: String
+}
