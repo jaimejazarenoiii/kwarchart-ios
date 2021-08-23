@@ -18,13 +18,15 @@ struct PieChartView: View {
     
     var body: some View {
         VStack(spacing: 10) {
+            Spacer()
             KCPieChartPresentationView(pieChartType: PieChartType.normal, chartData: PieChartDataModel(dataModel: pieSeries), legendPosition: LegendPosition.right)
-                .frame(width: 350, height: 400, alignment: .center)
-                .padding()
-            
+                .frame(width: 350, height: 250, alignment: .center)
             Text("Some pie chart")
             
+            KCPieChartPresentationView(pieChartType: PieChartType.doughnut, chartData: PieChartDataModel(dataModel: pieSeries), legendPosition: LegendPosition.right)
+                .frame(width: 350, height: 250, alignment: .center)
             Text("Some doughnut chart")
+            Spacer()
         }
     }
 }
