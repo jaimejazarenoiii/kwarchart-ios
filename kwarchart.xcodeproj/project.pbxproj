@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		04734E7F26D655BE00A675D5 /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04734E7E26D655BE00A675D5 /* LineGraphView.swift */; };
+		04734E8526D65F7900A675D5 /* AmountGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04734E8426D65F7900A675D5 /* AmountGraphView.swift */; };
+		04734E8B26D660A200A675D5 /* BarChartCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04734E8A26D660A200A675D5 /* BarChartCompleteView.swift */; };
 		04D380C426D518F000024DB6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D380C326D518F000024DB6 /* Transaction.swift */; };
 		04D380D726D51EF600024DB6 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D380D626D51EF600024DB6 /* BarChartView.swift */; };
 		A7328EF9267A05CE00192A0E /* PieChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7328EF8267A05CE00192A0E /* PieChartData.swift */; };
@@ -59,6 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04734E7E26D655BE00A675D5 /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
+		04734E8426D65F7900A675D5 /* AmountGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountGraphView.swift; sourceTree = "<group>"; };
+		04734E8A26D660A200A675D5 /* BarChartCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartCompleteView.swift; sourceTree = "<group>"; };
 		04D380C326D518F000024DB6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		04D380D626D51EF600024DB6 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		A7328EF8267A05CE00192A0E /* PieChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PieChartData.swift; path = Sources/kwarchart/Charts/PieChart/PieChartData.swift; sourceTree = SOURCE_ROOT; };
@@ -105,6 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				04D380D626D51EF600024DB6 /* BarChartView.swift */,
+				04734E7E26D655BE00A675D5 /* LineGraphView.swift */,
+				04734E8426D65F7900A675D5 /* AmountGraphView.swift */,
+				04734E8A26D660A200A675D5 /* BarChartCompleteView.swift */,
 			);
 			path = BarChart;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 			buildActionMask = 0;
 			files = (
 				A7EEC68D265F6D51005F6A1A /* KCPieChartView.swift in Sources */,
+				04734E8526D65F7900A675D5 /* AmountGraphView.swift in Sources */,
 				A759DEA8265E35F900FD177E /* PieChartType.swift in Sources */,
 				04D380C426D518F000024DB6 /* Transaction.swift in Sources */,
 				A7EEC679265F642D005F6A1A /* ChartData.swift in Sources */,
@@ -321,6 +331,8 @@
 				A7D16419268F1548007B8AA5 /* BasePresentationView.swift in Sources */,
 				A74E4655269312AB00723903 /* LegendsView.swift in Sources */,
 				A7EEC687265F6CAA005F6A1A /* PieChartCell.swift in Sources */,
+				04734E7F26D655BE00A675D5 /* LineGraphView.swift in Sources */,
+				04734E8B26D660A200A675D5 /* BarChartCompleteView.swift in Sources */,
 				04D380D726D51EF600024DB6 /* BarChartView.swift in Sources */,
 				A7F0015826A1807C00B47847 /* LegendsDataModel.swift in Sources */,
 				A7EEC6B1265F6E27005F6A1A /* KCPieChartPresentationView.swift in Sources */,
